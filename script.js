@@ -21,7 +21,12 @@ function validateSignUp() {
     text = "*Name is too short";
     error.innerHTML = text;
     return false;
-  } else if (password.length < 8) {
+  } else if (lastName.length < 3) {
+    text = "*Name is too short";
+    error.innerHTML = text;
+    return false;
+  }
+  else if (password.length < 8) {
     text = "*Password should be atleast 8 characters";
     error.innerHTML = text;
     return false;
