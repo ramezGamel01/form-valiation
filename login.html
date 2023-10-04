@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="face-book create an account form using HTML&CSS and JavaScript"
+    />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon -->
+    <link
+      rel="icon"
+      href="https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="login.css" />
+    <title>Facebook - log in or sign up</title>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="left-info">
+        <img class="logo" src="facebook-logo.svg" alt="facebook-logo" />
+        <h1>Recent Logins</h1>
+        <p>Click your picture or add an account.</p>
+        <div class="box-container">
+          <div class="box">
+            <img src="profile.jpg" width="200px" alt="profile" />
+            <h2>Ramez</h2>
+          </div>
+          <div class="box box-add">
+            <div class="icon">
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <h2>Add account</h2>
+          </div>
+        </div>
+      </div>
+
+      <form
+        action="https://fcebook-clone.vercel.app/"
+        onsubmit="return validateLogIn()"
+      >
+        <span id="error"></span>
+        <input id="email" type="email" placeholder="Enter your email" />
+        <input type="password" id="password" placeholder="New Password" />
+        <input type="submit" value="login" />
+        <a class="forget" href="#">Forgotten password?</a>
+        <hr />
+        <a class="new-acc" href="index.html">Create new account</a>
+      </form>
+    </section>
+    <script src="login.js"></script>
+  </body>
+</html>
+
+<!--  -->
