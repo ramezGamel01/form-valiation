@@ -59,8 +59,8 @@ input:focus {
 }
 
 .left-info .logo {
-  height: 70px;
-  max-width: 100%;
+  height: 100%;
+  width: 210px;
   margin: 0 0 -10px -20px;
 }
 
@@ -92,6 +92,7 @@ input:focus {
 
 .box-container .box img {
   width: 100%;
+  height: auto;
 }
 
 .box-container .box h2 {
@@ -106,7 +107,7 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-clr);
+  background-color: #dfdfdf;
 }
 
 .box-add .icon i {
@@ -119,6 +120,8 @@ input:focus {
 
 .box-add h2 {
   color: var(--primary-clr);
+  font-weight: 700 !important;
+  font-size: 1rem !important;
 }
 
 form {
